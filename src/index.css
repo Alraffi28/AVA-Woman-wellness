@@ -1,0 +1,120 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    /* AVA Design System - Calm, Trustworthy, Inclusive */
+    --background: 40 20% 98%;
+    --foreground: 220 20% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 220 20% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 20% 20%;
+
+    /* Soft Teal - Primary brand color */
+    --primary: 174 42% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Muted Lavender - Secondary accent */
+    --secondary: 260 30% 94%;
+    --secondary-foreground: 260 20% 35%;
+
+    /* Sage Green - Health accent */
+    --health: 150 25% 50%;
+    --health-foreground: 0 0% 100%;
+    --health-muted: 150 30% 95%;
+
+    /* Soft Blue - Career accent */
+    --career: 210 45% 55%;
+    --career-foreground: 0 0% 100%;
+    --career-muted: 210 40% 95%;
+
+    /* Warm Coral - Safety accent (not aggressive) */
+    --safety: 15 60% 60%;
+    --safety-foreground: 0 0% 100%;
+    --safety-muted: 15 50% 96%;
+
+    --muted: 220 15% 95%;
+    --muted-foreground: 220 10% 50%;
+
+    --accent: 260 30% 94%;
+    --accent-foreground: 260 20% 35%;
+
+    --destructive: 0 60% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 90%;
+    --input: 220 15% 90%;
+    --ring: 174 42% 45%;
+
+    --radius: 1rem;
+
+    /* Navigation */
+    --nav-background: 0 0% 100%;
+    --nav-foreground: 220 10% 50%;
+    --nav-active: 174 42% 45%;
+  }
+
+  .dark {
+    --background: 220 20% 10%;
+    --foreground: 220 10% 95%;
+
+    --card: 220 20% 14%;
+    --card-foreground: 220 10% 95%;
+
+    --popover: 220 20% 14%;
+    --popover-foreground: 220 10% 95%;
+
+    --primary: 174 42% 50%;
+    --primary-foreground: 220 20% 10%;
+
+    --secondary: 260 20% 20%;
+    --secondary-foreground: 260 20% 90%;
+
+    --health: 150 30% 45%;
+    --health-foreground: 0 0% 100%;
+    --health-muted: 150 20% 18%;
+
+    --career: 210 40% 50%;
+    --career-foreground: 0 0% 100%;
+    --career-muted: 210 30% 18%;
+
+    --safety: 15 50% 55%;
+    --safety-foreground: 0 0% 100%;
+    --safety-muted: 15 40% 18%;
+
+    --muted: 220 15% 18%;
+    --muted-foreground: 220 10% 60%;
+
+    --accent: 260 20% 20%;
+    --accent-foreground: 260 20% 90%;
+
+    --destructive: 0 50% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 15% 20%;
+    --input: 220 15% 20%;
+    --ring: 174 42% 50%;
+
+    --nav-background: 220 20% 12%;
+    --nav-foreground: 220 10% 60%;
+    --nav-active: 174 42% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
